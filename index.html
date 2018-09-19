@@ -11,9 +11,15 @@
   <!-- Le styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="materials/additional.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+
+
+
   <style>
 body {padding-top: 50px; /* 60px to make the container go all the way to the bottom of the topbar */}
 </style>
+
 </head>
 
 <body>
@@ -26,8 +32,9 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">About me</a>
-    <!--
         <a class="nav-item nav-link" href="projects.html">Projects</a>
+
+    <!--
         <a class="nav-item nav-link" href="blog_index.html">Blog</a>
     -->
         <a class="nav-item nav-link" href="materials/CV_1809.pdf" target="_blank">Resume</a>
@@ -53,16 +60,27 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
           <strong>Address:</strong>
           104 South Wright Street<br>
           Urbana, Illinois, 61801, USA<br>
-          <strong>E-mail</strong>: mohanli2@illinois.edu<br>
+          <strong>E-mail</strong>: <a href="mailto:mohanli2@illinois.edu"> mohanli2@illinois.edu </a><br>
+          <strong>Find me @</strong> 
+            <a href="https://scholar.google.com/citations?user=zijGz0IAAAAJ&hl=en" target="_blank"> 
+                <img src="materials/GS-logo.jpg" width="25px" class="img-fluid" alt="Responsive image">
+            </a>
+            <a href="https://www.linkedin.com/in/mohan-li-683b7410a/" target="_blank"> 
+                <img src="materials/Linkedin-logo.png" width="25px" class="img-fluid" alt="Responsive image">
+            </a><br>
+
+
+
+          <!--
           <a href="materials/CV_1809.pdf" target="_blank">Resume</a><br>
-          
+          -->
         </address>
       </div>
 
       <div class="col-9">
         <p>I am a Ph.D. student in the <a href="https://ril.npre.illinois.edu" target="_blank">Radiological Instrumentation Lab</a> at the
           <a href="https://illinois.edu/" target="_blank">University of Illinois at Urbana-Champaign</a>.
-          My doctoral research focuses on building a high-resolution head-and-neck cancer dedicated positron emission tomography (PET) system. I have been going through the whole process of a system development including Monte Carlo simulation, detector assembly and characterization, system assembly and calibration and system performance evalution. I am also interested in the application of machine learning and parallel programming in image reconstruction and processing. 
+          My doctoral research focuses on building a high-resolution head-and-neck cancer dedicated positron emission tomography (PET) system. I have been going through the whole process of a system development including Monte Carlo simulation, detector assembly and characterization, system assembly and calibration and system performance evaluation. I am also interested in the application of machine learning and parallel programming in image reconstruction and processing.
             <!--
             Please check out the <a href="projects.html"><strong>Projects</strong></a> page for more details about my research,
             and the <a href="blog_index.html"><strong>Blog</strong></a> where I document my hobby projects.</p>
@@ -101,7 +119,10 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
            <ul>
              <li>Working on the design, implementation, and evaluation of a head and neck cancer dedicated positron emission tomography system with oncologists and radiologists in 
                <a href="https://www.carle.org/locations/carle-foundation-hospital" target="_blank">Carle Foundation Hospital</a>.</li>
-               <li>Improved the bandwidth of a cross-strip CZT detector with different readout electrode pattern.</li>
+               <li>Improved the bandwidth of a cross-strip CZT detector with different readout electrode pattern.
+                [<a href="projects.html#czt">project</a>]
+                [<a href="https://www.sciencedirect.com/science/article/pii/S0969806X17307478" target="_blank">paper</a>]
+               </li>
              </ul>
            </div>
          </div>
@@ -112,9 +133,14 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
            <div class='col-10'>
              <strong> Undergraduate student, Tsinghua University </strong>2011 - 2015<br>
              <ul>
-               <li>Built a water-based liquis scintillator detector to separately observe the simultaneous scintillation and Cherenkov lights for the next generation of neutrino experiment detector.</li>
-               <li>Investigated the radioactivity of raw materials of stainless steel with a high-purity germanium detector for the low background requirement in <a href="http://jinping.hep.tsinghua.edu.cn/" target="_blank">Jinping Neutrino Experiment</a>.
+               <li>Built a water-based liquid scintillator detector to separately observe the simultaneous scintillation and Cherenkov lights for the next generation of neutrino experiment detector. 
+                  [<a href="projects.html#lab">project</a>]
+                  [<a href="https://www.sciencedirect.com/science/article/pii/S0168900216305411" target="_blank">paper</a>]
                </li>
+               <li>Investigated the radioactivity of raw materials of stainless steel with a high-purity germanium detector for the ultra-low background requirement in <a href="http://jinping.hep.tsinghua.edu.cn/" target="_blank">Jinping Neutrino Experiment</a>. 
+                  [<a href="projects.html#hpge">project</a>]
+                  [<a href="https://www.sciencedirect.com/science/article/pii/S0168900217311920" target="_blank">paper</a>]
+                </li>
              </ul>
            </div>
          </div>
@@ -128,7 +154,7 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
               <a href="http://www.desy.de/index_eng.html">DESY</a> </strong>
             -->
             <ul>
-             <li> Implemented particle hit error into the analysis framework of <a href="https://telescopes.desy.de/Main_Page" target="_blank">EUDET-type beam telescope</a>.</li>
+             <li> Implemented particle hit error into the data analysis framework of <a href="https://telescopes.desy.de/Main_Page" target="_blank">EUDET-type beam telescope</a>. [<a href="projects.html#desy">project</a>]</li>
            </ul>
          </div>
        </div>
@@ -140,7 +166,7 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
        <ol>
         <table width="150%" align="center" border="0" cellpadding="20">
           <li> <a href="http://cancer.illinois.edu/cstar-program" target="_blank"> Cancer Scholars for Translational and Applied Research Graduate Fellowship </a>, 2018</li>
-          <li>Graduate College Conference Travel Award, 2017</li>
+          <li> <a href="https://grad.illinois.edu/general/travelaward" target="_blank"> Graduate College Conference Travel Award </a>, 2017</li>
           <li>National Training Programs of Innovation and Entrepreneurship Award, 2015</li>
           <li>Academic Excellence Scholarship, 2012, 2013, 2014</li>
           <li>Best summer student in DESY ATLAS group, 2014</li>
@@ -153,12 +179,11 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
      <div class="page-header"><h2>Publications</h2></div>
      <ol>
       <table width="150%" align="center" border="0" cellpadding="20">
-        <li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh, <a href="https://www.sciencedirect.com/science/article/pii/S0969806X17307478" target="_blank">“Influence of channel configuration on bandwidth of cadmium zinc telluride detector with a cross-strip pattern”</a>. Radiation Physics and Chemistry (2018). 
-          <!-- [<a href="projects.html#msn">project page</a>] --> </li>
+        <li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh, <a href="https://www.sciencedirect.com/science/article/pii/S0969806X17307478" target="_blank">“Influence of channel configuration on bandwidth of cadmium zinc telluride detector with a cross-strip pattern”</a>. Radiation Physics and Chemistry (2018). [<a href="projects.html#czt">project</a>] </li>
         
-        <br><li><strong>Li, Mohan</strong>, et al, <a href="https://www.sciencedirect.com/science/article/pii/S0168900216305411" target="_blank">"Separation of scintillation and Cherenkov lights in linear alkyl benzene"</a>. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 830 (2016): 303-308.</li>
+        <br><li><strong>Li, Mohan</strong>, et al, <a href="https://www.sciencedirect.com/science/article/pii/S0168900216305411" target="_blank">"Separation of scintillation and Cherenkov lights in linear alkyl benzene"</a>. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 830 (2016): 303-308. [<a href="projects.html#lab">project</a>] </li>
 
-        <br><li>Hussain, Ghulam, et al, <a href="https://www.sciencedirect.com/science/article/pii/S0168900217311920" target="_blank">"Assay of low-background stainless steel by smelting for the neutrino experiment at Jinping"</a>. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 881 (2018): 65-71.</li>
+        <br><li>Hussain, Ghulam, et al, <a href="https://www.sciencedirect.com/science/article/pii/S0168900217311920" target="_blank">"Assay of low-background stainless steel by smelting for the neutrino experiment at Jinping"</a>. Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 881 (2018): 65-71. [<a href="projects.html#hpge">project</a>] </li>
 
         <br><li>Beacom, John F., et al., <a href="http://iopscience.iop.org/article/10.1088/1674-1137/41/2/023002/meta" target="_blank">“Physics prospects of the Jinping neutrino experiment.”</a> Chinese physics C 41.2 (2017): 023002. </li>
 
@@ -177,11 +202,11 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
 
       <li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh. <a href="https://www.eventclass.org/contxt_ieee2017/online-program/session?s=M-08#2491" target="_blank">"Simulation of a two-panel head and neck dedicated PET system."</a> 2017 IEEE Nuclear Science Symposium and Medical Imaging Conference, Atlanta, Oct. 21-28, 2017. </li>
 
-      <br><li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh, <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10392/1039217/Effect-of-cathode-energy-spectrum-on-the-depth-of-interaction/10.1117/12.2275674.full" target="_blank">"Effect of cathode energy spectrum on the depth of interaction estimation and anode signal recovery in CZT detectors"</a>. Hard X-Ray, Gamma-Ray, and Neutron Detector Physics XIX. Vol. 10392. International Society for Optics and Photonics, San Diego, Aug. 6-10, 2017.</li>
+      <br><li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh, <a href="https://www.spiedigitallibrary.org/conference-fresumeedings-of-spie/10392/1039217/Effect-of-cathode-energy-spectrum-on-the-depth-of-interaction/10.1117/12.2275674.full" target="_blank">"Effect of cathode energy spectrum on the depth of interaction estimation and anode signal recovery in CZT detectors"</a>. Hard X-Ray, Gamma-Ray, and Neutron Detector Physics XIX. Vol. 10392. International Society for Optics and Photonics, San Diego, Aug. 6-10, 2017.</li>
 
-      <li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh. "Bandwidth consideration for data acquisition electronics of radiation detectors." 10th International Topical Meeting on Industrial Radiation and Radioisotope Measurement Applications, Chicago, July 9-13, 2017. </li>
+      <br><li><strong>Li, Mohan</strong>, and Shiva Abbaszadeh. "Bandwidth consideration for data acquisition electronics of radiation detectors." 10th International Topical Meeting on Industrial Radiation and Radioisotope Measurement Applications, Chicago, July 9-13, 2017. </li>
 
-       <li><strong>Li, Mohan</strong>. "Linead Alkyl-Benzene (LAB) Cherenkov and scintillation separation." 2015 Workshop of Jinping Neutrino Program, Beijing, 2015. </li>
+      <br><li><strong>Li, Mohan</strong>. "Linead Alkyl-Benzene (LAB) Cherenkov and scintillation separation." 2015 Workshop of Jinping Neutrino Program, Beijing, 2015. </li>
 
       </table>
   </ol>
@@ -192,6 +217,7 @@ body {padding-top: 50px; /* 60px to make the container go all the way to the bot
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 <footer class="page-footer font-small blue">
   <!-- Copyright -->
