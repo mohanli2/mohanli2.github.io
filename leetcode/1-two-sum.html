@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Mohan Li, PhD student of UIUC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohan">
+    <meta name="author" content="Mohan">
+	   <meta name="keywords" content="Mohan Li, UIUC, PET, medical device, data science">
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../materials/additional.css" rel="stylesheet">
+    <style>
+      body {padding-top: 50px; /* 60px to make the container go all the way to the bottom of the topbar */}
+    </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">Mohan's Homepage</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="../index.html">About me</a>
+        <a class="nav-item nav-link" href="../projects.html">Projects</a>
+        <a class="nav-item nav-link active" href="../leetcode.html">Leetcodes</a>
+        <a class="nav-item nav-link" href="../materials/CV_1809.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+
+    <div class="container">
+
+
+    <section id="Leetcodes">
+			<div class="page-header">
+				<h2>1. Two sum</h2>
+			</div>
+
+      <h4> Problem </h4>
+      Given an array of integers, return indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. <br>
+      Example: <br>
+      Given nums = [2, 7, 11, 15], target = 9. Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1]. <br>
+      <a href="https://leetcode.com/problems/two-sum/" target="_blank">Problem link</a><br>
+
+      <br> <h4> Problem solving </h4>
+      Use <b>HashMap</b> to achieve O(1) search efficiency. <br>
+
+      <br> <h4> Code </h4> <br>
+      <form action="#" method="post">
+      <textarea name="comments" 
+          id="comments" 
+          style="width:1000px;height:370px;background-color:rgb(14, 46, 44);color:white;border:1;padding:2%;font:22px/30px consolas;">
+
+      class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        unordered_map<int, int> m;
+        vector<int> res;
+        
+        // construct unordered_map
+        for(int i=0; i<nums.size(); ++i){
+            m[nums[i]] = i;
+        }
+        
+        // search for element
+        for(int i=0; i<nums.size(); ++i){
+            int e = target - nums[i];
+            if(m.count(e) && m[e] != i ){
+                res.push_back(i);
+                res.push_back(m[e]);
+                break;
+            }
+        }
+        
+        // output
+        return res;
+    }
+};
+
+
+      </textarea>
+    </form>
+		</section>
+    <br>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="background-color:#4285f4">
+          <font color='white'>© 2018 Copyright: <strong> Mohan Li</strong> (updated Sep. 2018)</font>
+        </div>
+      </footer>
+
+</body></html>
