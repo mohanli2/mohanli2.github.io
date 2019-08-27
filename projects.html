@@ -30,7 +30,7 @@
         <!--
         <a class="nav-item nav-link" href="leetcode.html">Leetcodes</a>
         -->
-        <a class="nav-item nav-link" href="materials/CV_1902.pdf" target="_blank">Resume</a>
+        <a class="nav-item nav-link" href="materials/CV_1908.pdf" target="_blank">Resume</a>
       </div>
     </div>
   </nav>
@@ -44,43 +44,72 @@
 				<h2>Projects</h2>
 			</div>
 
+<a class="anchor" id="system"></a>
+      <div class="row align-items-center">
+       <div class='col-6 text-center'><img src="materials/system.png" width="480px" class="img-fluid" alt="Responsive image"></div>
+       <div class='col-6'>
+         <h4>Design study of an organ dedicated PET system</h4>
+         <p> Organ dedicated PET system can improve the spatial resolution and photon sensitivity in an organ-specific imaging environment compared with whole-body PET. Head and neck cancer needs high-resolution imaging due to its complex anatomy and vital physiological role. A dedicated PET system was evaluated and compared with GE Discovery MI. The results showed that the dedicated system could achieve a better performance in terms of noise equivalent count rate, photon sensitivity, spatial resolution, and lesion visualization capability. A PET system will be built based on this design. </p>
+       </div>
+      </div>
+      <br>
+
+<br>
+<br>
+  <a class="anchor" id="detector"></a>
+      <div class="row align-items-center">
+       <div class='col-6 text-center'><img src="materials/detector.png" width="480px" class="img-fluid" alt="Responsive image"></div>
+       <div class='col-6'>
+         <h4>Design and characterization of a dual-ended readout PET detector</h4>
+         <p> Depth-of-interaction (DOI) capability is important for achieving high spatial resolution and photon sensitivity in an organ dedicated PET system, and dual-ended readout can achieve good DOI resolution. The LYSO block contained 4&times4 LYSO unit, each LYSO unit contained 6&times6 LYSO crystal, and the crystal size was 1&times1&times20 mm&sup3. The LYSO block was readout by two SiPM from both sides. The energy, coincidence time and DOI resolution were measured as 15.7&plusmn0.7%, 602.1&plusmn10.6 ps, 2.33&plusmn0.07 mm respectively. The good DOI resolution indicates the potential of utilizing the detector for high-resolution PET applications.[<a href="https://iopscience.iop.org/article/10.1088/1361-6560/ab3866/meta" target="_blank">paper</a>]</p>
+       </div>
+      </div>
+      <br>
+
+<br>
+<br>
    <a class="anchor" id="czt"></a>
       <div class="row align-items-center">
        <div class='col-6 text-center'><img src="materials/czt.png" width="480px" class="img-fluid" alt="Responsive image"></div>
        <div class='col-6'>
          <h4>Influence of channel configuration on bandwidth of cadmium zinc telluride detector with a cross-strip pattern</h4>
-         <p> The goal of this project is to improve the bandwidth of a cross-strip CZT detector, which has 39 anodes and 8 cathodes and needs two RENA-3 ASIC to readout its signal. I simulated the detector response in GATE and wrote a program to mimic the ASIC performance, taking Compton scattering and charge sharing into consideration. My work showed that half-half anode pattern had a larger bandwidth than alternate anode pattern and cathode pattern could be further optimized based on the load. [<a href="https://www.sciencedirect.com/science/article/pii/S0969806X17307478" target="_blank">paper</a>]</p>
+         <p> Cadmium zinc telluride (CZT) detectors have superior spatial and energy resolution and have the potential to be used for positron emission tomography applications. The goal of this project is to improve the bandwidth of a cross-strip CZT detector, which has 39 anodes and 8 cathodes and needs two RENA-3 ASIC to readout its signal. <b>I simulated the detector response in GATE and wrote a program to mimic the detector response and ASIC performance, taking Compton scattering and charge sharing into consideration.</b> My work shows that a half-half anode pattern had a larger bandwidth than an alternate anode pattern and the cathode pattern could be further optimized based on the load. [<a href="https://www.sciencedirect.com/science/article/pii/S0969806X17307478" target="_blank">paper</a>]</p>
        </div>
       </div>
       <br>
 
+<br>
+<br>
       <a class="anchor" id="lab"></a>
       <div class="row align-items-center">
        <div class='col-6 text-center'><img src="materials/lab.png" width="500px" class="img-fluid" alt="Responsive image"></div>
        <div class='col-6'>
          <h4>Separation of scintillation and Cherenkov lights in linear alkyl benzene</h4>
-        <p> Water-based liquid scintillator (WbLS) is a promising detecting material for next generation of neutrino and proton decay experiments. This purpose of this project is to verify the separable measurement of the simultaneous scintillation and Cherenkov lights in linear alkyl benzene (LAB), which is an important component of WbLS. I participated in the mechanical design of a 20-L capacity detector. Then I picked out six Philips PMTs with little noise and small after-pulses for the trigger system and calibrated the gain of two  PMTs for measuring scintillation and Cherenkov lights in LAB. The trigger signals and LAB lights were recorded by a FADC CAEN VX1721, and data was acquired by a DAQ program based on <a href="https://midas.triumf.ca/MidasWiki/index.php/Main_Page" target="_blank"> MIDAS</a>. I designed a waveform-screening algorithm for data selection. The average time spectra of scintillation and Cherenkov lights were fitted by a biexponential function convoluted with a Gaussian detector response to get the rising and decay constants and light yield of scintillation light of LAB. The result is essential for guiding the making of WbLS. [<a href="https://www.sciencedirect.com/science/article/pii/S0168900216305411" target="_blank">paper</a>]</p>
+        <p> Water-based liquid scintillator (WbLS) is a promising detecting material for the next generation of neutrino and proton decay experiments. The purpose of this project is to verify the separable measurement of the simultaneous scintillation and Cherenkov lights in linear alkylbenzene (LAB), which is an important component of WbLS. The trigger signals and LAB lights were detected by photomultiplier tubes and digitized by an FADC CAEN VX1721. <b>I wrote a real-time data streaming pipeline based on <a href="https://midas.triumf.ca/MidasWiki/index.php/Main_Page" target="_blank"> MIDAS</a>, and designed a waveform-screening algorithm for data selection.</b> The average time spectra of scintillation and Cherenkov lights were fitted by a biexponential function convoluted with a Gaussian detector response to get the rising and decay constants and light yield of scintillation light of LAB. The result is essential for guiding the making of WbLS. [<a href="https://www.sciencedirect.com/science/article/pii/S0168900216305411" target="_blank">paper</a>]</p>
        </div>
       </div>
       <br>
 
+<br>
+<br>
+      <a class="anchor" id="desy"></a>
+      <div class="row align-items-center">
+       <div class='col-6 text-center'><img src="materials/desy.png" width="600px" class="img-fluid" alt="Responsive image"></div>
+       <div class='col-6'>
+         <h4>Implement particle hit errors to the EUTelescope data analysis platform</h4>
+        <p> One primary goal of EUTelescope is to reconstruct particle tracks, whose accuracy depends on the particle hit error. The goal of the project is to estimate the particle hit error. <b>I put forward physical models to describe the dependence of the particle hit error on the pixel activation thresholds and cluster shape, and verified the models by checking the particle hit distribution of different cluster shapes. The model was implemented in the EUTelescope data analysis platform.</b> My work improves the particle hit error in low and middle thresholds, which is important for reducing the error of the reconstructed particle track. </p>
+       </div>
+      </div>
+      <br>
+
+<br>
+<br>
       <a class="anchor" id="hpge"></a>
       <div class="row align-items-center">
        <div class='col-6 text-center'><img src="materials/hpge.png" width="500px" class="img-fluid" alt="Responsive image"></div>
        <div class='col-6'>
          <h4>Assay of low-background stainless steel by smelting for the neutrino experiment at Jinping</h4>
-        <p> The goal of this project is to smelt low-radioactivity stainless steel (SST) that is compatible with the ultra-low background requirement in Jinping Neutrino Experiment. I used a high-purity germanium detector to measure the radioactivity of raw materials and commercial samples of SST and wrote a program that could automatically identify radionuclide type and compute its radioactivity. My work helped to identify contamination sources such as C and Si and promoted to contributed to the smelting of custom-made SST samples whose radioactivity was comparable to those used in other neutrino expeirments such as Borexino and NEXT. [<a href="https://www.sciencedirect.com/science/article/pii/S0168900217311920" target="_blank">paper</a>]</p>
-       </div>
-      </div>
-      <br>
-
-
-      <a class="anchor" id="desy"></a>
-			<div class="row align-items-center">
-       <div class='col-6 text-center'><img src="materials/desy.png" width="600px" class="img-fluid" alt="Responsive image"></div>
-       <div class='col-6'>
-         <h4>Adding particle hit errors to EUDET-type beam telescopes</h4>
-        <p> The goal of the project is to find accurate particle hit errors and implement it into the corresponding data analysis framework EUTelescope. I put forward a model to describe the decisive role of pixel activation thresholds on particle hit errors, and verified my model by moving particles from a specific activated pattern into one pixel so that the distributions of hit positions could be shown directly. My work improved particles hit errors in low and middle thresholds, which was important for finding more real particle tracks and improving track errors. </p>
+        <p> It is important to control the background radioactivity in Jinping Underground Neutrino Experiment. The goal of this project is to smelt low-radioactivity stainless steel (SST) that is compatible with the ultra-low background requirement. A high-purity germanium (HPGe) detector was used to measure the radioactivity of raw materials and commercial samples of SST. <b>I wrote a program to automatically identify radionuclide type and compute its radioactivity.</b> My work helps to identify contamination sources such as C and Si and promotes to the smelting of custom-made SST samples, whose radioactivity is comparable to those used in other neutrino experiments such as Borexino and NEXT. [<a href="https://www.sciencedirect.com/science/article/pii/S0168900217311920" target="_blank">paper</a>]</p>
        </div>
       </div>
       <br>
@@ -96,7 +125,7 @@
       <footer class="page-footer font-small blue">
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3" style="background-color:#4285f4">
-          <font color='white'>© 2018 Copyright: <strong> Mohan Li</strong> (updated Sep. 2018)</font>
+          <font color='white'>© 2019 Copyright: <strong> Mohan Li</strong> (updated Sep. 2019)</font>
         </div>
       </footer>
 
